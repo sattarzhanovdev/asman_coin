@@ -23,8 +23,17 @@ body{
   position: relative;
 }
 
+#fixedNav{
+  position: fixed;
+  top: 15px;
+  backdrop-filter: brightness(80%) blur(30px);
+  padding: 5px 5%;
+  border-radius: 10px;
+}
+
 .nav .logo{
   padding: 0;
+  list-style: none;
 }
 
 .nav .list{

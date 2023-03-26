@@ -24,7 +24,7 @@ body{
 }
 
 #fixedNav{
-  width: 100%;  
+  width: 90%;  
   position: fixed;
   top: 10px;
   backdrop-filter: brightness(80%) blur(30px);

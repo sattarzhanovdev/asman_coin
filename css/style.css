@@ -37,6 +37,15 @@ body{
   z-index: 1;
 }
 
+@media screen and (max-width: 1024px) {
+  .nav{
+    width: 90%;
+  }
+  #fixedNav{
+    width: 90%;
+  }
+}
+
 .nav .logo{
   padding: 0;
   list-style: none;

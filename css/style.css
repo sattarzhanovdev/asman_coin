@@ -20,7 +20,6 @@ body::before{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
 }
 
 .container{
@@ -35,25 +34,6 @@ body::before{
   padding: 15px 5%;
 }
 
-.blue{
-  position: absolute;
-  width: 196px;
-  height: 196px;
-  background: #3600A9;
-  filter: blur(166.5px);
-  z-index: -1;
-}
-
-.purple{
-  position: absolute;
-  width: 196px;
-  height: 196px;
-  left: 986px;
-  top: 342px;
-
-  background: #3600A9;
-  filter: blur(166.5px);
-}
 
 #fixedNav{
   width: 1260px;

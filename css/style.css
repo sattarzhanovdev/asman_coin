@@ -1,0 +1,1163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: montserrat;
+}
+
+body{
+  background: #03051B;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 1440px;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  position: relative;
+}
+
+.nav .logo{
+  padding: 0;
+}
+
+.nav .list{
+  display: flex;
+  align-items: center;
+}
+
+.nav .list li{
+  list-style: none;
+}
+
+.nav .list li a{
+  text-decoration: none;
+  color: white;
+  margin: 0 40px;
+}
+
+.nav .list li .active{
+  color: #1B6DE9;
+}
+
+.nav .lang{
+  width: 136px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 15px;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav #selected{
+  border-radius: 10px 10px 0 0;
+}
+
+.nav .lang li{
+  list-style: none;
+  color: white;
+}
+
+.nav .drop{
+  width: 166px;
+  border: 1px solid white;
+  position: absolute;
+  right: 5%;
+  top: 60px;
+  padding: 0;
+  border-radius: 0 0 10px 10px;
+  display: none;
+}
+
+.nav .drop li{
+  list-style: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.nav .drop li:nth-child(8){
+  border: 0;
+}
+
+.nav .bars{
+  display: none;
+}
+
+.nav .bars li{
+  list-style: none;
+  color: white;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav .lang{
+    display: none;
+  }
+  .nav .list li a{
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav .list{
+    display: none;
+  }
+  .nav .bars{
+    display: block;
+  }
+}
+
+
+
+/* banner */
+
+.banner_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner .left{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.banner .left h1{
+  color: white;
+  font-size: 55px;
+  width: 420px;
+  margin: 0;
+}
+
+.banner .left p{
+  color: white;
+  width: 480px;
+} 
+
+.banner .right img{
+  width: 535px;
+  height: 412.48px;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner .right img{
+    width: 400px;
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .banner .left h1{
+    font-size: 35px;
+  }
+  .banner .left p{
+    width: 300px;
+  }
+  .banner .right img{
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .banner .right{
+    display: none;
+  }
+  .banner .left h1{
+    width: 250px;
+  }
+  .banner .left p{
+    width: 250px;
+  }
+  
+}
+/* contract */
+
+.contract_container{
+  display: flex;
+  justify-content: center;
+}
+
+.contract{
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding:  16px;
+  margin-top: 100px;
+}
+
+.contract .up{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+.contract .up h2{
+  color: white;
+  margin-right: 50px;
+}
+
+.contract .up span{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: clamp(12px, 2vw, 20px);
+  margin-right: 50px;
+}
+
+.contract .up .btns button{
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contract .down{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.contract .down .contain{
+  padding: 0px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  border-right: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+.contract .down .contain:nth-child(2){
+  align-items: center;
+}
+
+.contract .down .contain:nth-child(3){
+  align-items: flex-end;
+  border: 0;
+}
+
+.contract .down .contain p{
+  color: rgba(255, 255, 255, 0.83);
+  font-family: Gilroy;
+  margin-bottom: 0;
+}
+
+.contract .down .contain h2{
+  margin: 0;
+  font-size: 32px;
+  font-family: Gilroy Bold;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .contract{
+    width: 900px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .contract{
+    width: 700px;
+  }
+  .contract .down{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contract .down .contain{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contract .down .contain:nth-child(3){
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contract{
+    width: 360px;
+  }
+  .contract .up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contract .up h2{
+    text-align: center;
+    margin: 10px 0;
+  }
+  .contract .up span{
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .contract .up .btns{
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contract{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contract{
+    width: 260px;
+  }
+
+  .contract .up span{
+    font-size: 10px;
+  }
+}
+
+/* exchanges */
+
+
+.exchanges{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.exchanges h2{
+  color: white;
+}
+
+@media screen and (max-width: 425px) {
+  .exchanges h2{
+    width: 320px;
+    text-align: center;
+  }
+}
+
+.exchanges .burses_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.burses{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.burse{
+  width: 256px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 16px;
+  border-radius: 16px;
+  opacity: 0.4;
+}
+
+.burse img{
+  width: 56px;
+  height: 56px;
+  margin-right: 15px;
+}
+
+.burses #active{
+  opacity: 1;
+}
+
+/* advantages */
+
+.advantages_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.advantages{
+  width: 1200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.advantages .left h1{
+  color: white;
+}
+
+.advantages .left p{
+  color: white;
+  width: 500px;
+  font-size: 20px;
+}
+
+.advantages .left button{
+  width: 136px;
+  height: 40px;
+  background: #1B6DE9;
+  color: white;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.advantages .right{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.advantages .right .card{
+  width: 420px;
+  height: 320px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  margin-bottom: 50px;
+  padding: 25px;
+  position: relative;
+}
+
+.advantages .right .card img{
+  position: absolute;
+  top: -30px;
+}
+
+.advantages .right .card h2{
+  color: white;
+  font-size: 25px;
+  width: 300px;
+  margin-top: 60px;
+}
+
+.advantages .right .card p{
+  color: white;
+  width: 90%;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.advantages .right .card button{
+  color: white;
+  background: #0A0A1F;
+  border: 0;
+  border-radius: 10px;
+  width: 220px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .advantages_container{
+    width: 1024px;
+  }
+  .advantages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advantages .right{
+    margin-top: 100px;
+  }
+
+  .advantages .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .advantages_container{
+    width: 425px;
+  }
+  .advantages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advantages .left h1{
+    font-size: 25px;
+  }
+
+  .advantages .left p{
+    font-size: 14px;
+    width: 320px;
+  }
+
+  .advantages .right .card p{
+    width: 90%;
+    font-size: 14px;
+  }
+  
+  .advantages .right .card{
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages_container{
+    width: 768px;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+  .advantages_container{
+    width: 425px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .advantages_container{
+    width: 375px;
+  }
+  .advantages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advantages .left h1{
+    font-size: 25px;
+  }
+
+  .advantages .left p{
+    font-size: 14px;
+    width: 300px;
+  }
+
+  .advantages .right .card{
+    width: 300px;
+    height: 360px;
+  }
+
+  .advantages .right .card p{
+    word-break: break-all;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .advantages_container{
+    width: 320px;
+  }
+  .advantages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advantages .left h1{
+    font-size: 20px;
+  }
+
+  .advantages .left p{
+    font-size: 14px;
+    width: 300px;
+  }
+  
+  .advantages .right .card{
+    width: 240px;
+    height: 400px;
+  }
+  
+  .advantages .right .card h2{
+    font-size: 20px;
+    width: 90%;
+  }
+  .advantages .right .card p{
+    font-size: 14px;
+    width: 90%;
+    text-align: left;
+  }
+}
+
+/* asman keeping */
+
+.asman_keeping{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.asman_keeping h2{
+  color: white;
+}
+
+.asman_keeping .places{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.asman_keeping .places .place{
+  width: 230px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  padding: 0 10px;
+} 
+
+.asman_keeping .places .place span{
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 425px) {
+  .asman_keeping h2{
+    text-align: center;
+    width: 90%;
+  }
+  .asman_keeping .places .place{
+    margin: 10px 0;
+  }
+}
+
+/* after buying */
+
+.afterBuying{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.buy_left {
+  color: white;
+}
+
+.buy_left p{
+  font-weight: 200;
+}
+
+.buy_left ul li{
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.coin{
+  width: 500px;
+  border-radius: 50%;
+  animation: float 4s ease-in-out infinite;
+}
+
+@media screen and (max-width: 1024px) {
+  .buy_left{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .buy_left h1{
+    font-size: 20px;
+  }
+  .buy_left h1, p{
+    text-align: center;
+  }
+  .buy_right{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .buy_left ul{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .buy_left ul li{
+    width: 100%;
+  }
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+
+/* advantages 2 */
+
+.advantages_container2{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.advantages2{
+  width: 1200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.advantages2 .left h1{
+  color: white;
+}
+
+.advantages2 .left p{
+  color: white;
+  width: 500px;
+  font-size: 20px;
+}
+
+.advantages2 .left button{
+  width: 136px;
+  height: 40px;
+  background: #1B6DE9;
+  color: white;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.advantages2 .right{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.advantages2 .right .card{
+  width: 420px;
+  height: 320px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  margin-bottom: 50px;
+  padding: 25px;
+  position: relative;
+}
+
+.advantages2 .right .card img{
+  position: absolute;
+  top: -30px;
+}
+
+.advantages2 .right .card h2{
+  color: white;
+  font-size: 25px;
+  width: 300px;
+  margin-top: 60px;
+}
+
+.advantages2 .right .card p{
+  color: white;
+  width: 90%;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.advantages2 .right .card button{
+  color: white;
+  background: #0A0A1F;
+  border: 0;
+  border-radius: 10px;
+  width: 220px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .advantages_container2{
+    width: 1024px;
+  }
+  .advantages2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .advantages2 .right{
+    margin-top: 100px;
+  }
+
+  .advantages2 .left h1{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .advantages_container2{
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .advantages_container2{
+    width: 425px;
+  }
+
+  .advantages2 .left h1{
+    font-size: 25px;
+  }
+
+  .advantages2 .left p{
+    font-size: 14px;
+    width: 320px;
+  }
+
+  .advantages2 .right .card p{
+    width: 90%;
+    font-size: 14px;
+  }
+  
+  .advantages2 .right .card{
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .advantages_container2{
+    width: 375px;
+  }
+
+  .advantages2 .left h1{
+    font-size: 25px;
+  }
+
+  .advantages2 .left p{
+    font-size: 14px;
+    width: 300px;
+  }
+
+  .advantages2 .right .card{
+    width: 300px;
+    height: 360px;
+  }
+
+  .advantages2 .right .card p{
+    word-break: break-all;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .advantages_container2{
+    width: 320px;
+  }
+
+  .advantages2 .left h1{
+    font-size: 20px;
+  }
+
+  .advantages2 .left p{
+    font-size: 14px;
+    width: 300px;
+  }
+  
+  .advantages2 .right .card{
+    width: 240px;
+    height: 400px;
+  }
+  
+  .advantages2 .right .card h2{
+    font-size: 20px;
+    width: 90%;
+  }
+  .advantages2 .right .card p{
+    font-size: 14px;
+    width: 90%;
+    text-align: left;
+  }
+}
+
+
+/* end_point */
+
+.end_point{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.end_point h2{
+  text-align: center;
+  color: white;
+  width: 90%;
+}
+
+.end_point p{
+  text-align: center;
+  color: white;
+  width: 90%;
+}
+
+
+/* statistic */
+
+.statistic_container{
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.statistic{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statistic .left{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.statistic .left li{
+  color: white;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.statistic .left li div{
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.statistic .left li:nth-child(1) div{
+  background: #23AA30;
+}
+
+.statistic .left li:nth-child(2) div{
+  background: #C92222;
+}
+
+.statistic .left li:nth-child(3) div{
+  background: #1ABBF1;
+}
+
+.statistic .left li:nth-child(4) div{
+  background: #C127BB;
+}
+
+.statistic .left li:nth-child(5) div{
+  background: #DB4E11;
+}
+
+.statistic .left li:nth-child(6) div{
+  background: #8B44FF;
+}
+
+
+.statistic .right img{
+  width: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+  .statistic_container{
+    width: 1024px;
+  }
+  .statistic .right img{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statistic_container{
+    width: 768px;
+  }
+  .statistic .right img{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .statistic_container{
+    width: 425px;
+  }
+  .statistic{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .statistic_container{
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .statistic_container{
+    width: 320px;
+  }
+  .statistic .right img{
+    width: 300px;
+  }
+}
+
+
+/* footer */
+
+.footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+.footer .logo{
+  padding: 0;
+}
+
+.footer .list{
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.footer .list li{
+  list-style: none;
+}
+
+.footer .list li a{
+  text-decoration: none;
+  color: white;
+  margin: 0 40px;
+}
+
+.footer .list li .active{
+  color: #1B6DE9;
+}
+
+.footer .socials{
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.footer .socials li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .socials li a{
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  padding: 10px 12px;
+  border-radius: 50px;
+  background: white;
+}
+
+.footer .copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+.footer .copyright p{
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .list li{
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer .copyright p{
+    width: 90%;
+  }
+}

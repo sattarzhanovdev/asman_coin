@@ -24,11 +24,13 @@ body{
 }
 
 #fixedNav{
+  width: 100%;  
   position: fixed;
-  top: 15px;
+  top: 10px;
   backdrop-filter: brightness(80%) blur(30px);
   padding: 5px 5%;
   border-radius: 10px;
+  z-index: 1;
 }
 
 .nav .logo{
@@ -466,7 +468,7 @@ body{
 
 .advantages .right .card{
   width: 420px;
-  height: 320px;
+  height: auto;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
   margin-bottom: 50px;
@@ -590,7 +592,7 @@ body{
 
   .advantages .right .card{
     width: 300px;
-    height: 360px;
+    height: auto;
   }
 
   .advantages .right .card p{
@@ -621,7 +623,7 @@ body{
   
   .advantages .right .card{
     width: 240px;
-    height: 400px;
+    height: auto;
   }
   
   .advantages .right .card h2{
@@ -805,7 +807,7 @@ body{
 
 .advantages2 .right .card{
   width: 420px;
-  height: 320px;
+  height: auto;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
   margin-bottom: 50px;
@@ -907,7 +909,7 @@ body{
 
   .advantages2 .right .card{
     width: 300px;
-    height: 360px;
+    height: auto;
   }
 
   .advantages2 .right .card p{
@@ -932,7 +934,7 @@ body{
   
   .advantages2 .right .card{
     width: 240px;
-    height: 400px;
+    height: auto;
   }
   
   .advantages2 .right .card h2{

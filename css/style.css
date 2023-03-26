@@ -13,10 +13,10 @@ body{
 
 .container{
   width: 1440px;
-  position: relative;
 }
 
 .nav{
+  width: 1260px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +25,7 @@ body{
 }
 
 #fixedNav{
-  width: 90%;
+  width: 1260px;
   display: flex;
   justify-content: space-between;
   align-items: center;

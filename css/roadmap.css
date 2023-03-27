@@ -394,6 +394,12 @@ body{
   .way_center{
     opacity: 0;
   }
+  .year_right{
+    right: 150px;
+  }
+  .year:nth-child(2){
+    left: 150px;
+  }
 }
 
 @media screen and (max-width: 320px) {

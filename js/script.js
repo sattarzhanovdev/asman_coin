@@ -2,6 +2,7 @@ const lang = document.querySelector('.lang')
 const drop = document.querySelector('.drop')
 const nav = document.querySelector('.nav')
 const container = document.querySelector('.container')
+const line1 = document.querySelector('.line1')
 
 let isOpened = false;
 
@@ -26,4 +27,5 @@ window.onscroll = () => {
     nav.setAttribute('id', '')
     container.setAttribute('style', '')
   }
+
 }
